@@ -26,7 +26,7 @@ public class BMI {
             System.out.println(" => NORMAL");
         } else if ( BMI >= 25.0 && BMI <= 29.9) {
             System.out.println(" => OVERWEIGHT");
-        } else if ( BMI >= 30.0 ){
+        } else if ( BMI >= 30.0 ) {
             System.out.println(" => OBESE");
         }
 
