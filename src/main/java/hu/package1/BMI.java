@@ -17,18 +17,19 @@ public class BMI {
             System.out.println("INVALID");
         }
 
-        double BMI = weight / ( height * height );
-        System.out.print("BMI: " + BMI);
+        if ( weight > 0 && height > 0 ) {
+            double BMI = weight / ( height * height );
+            System.out.print("BMI: " + BMI);
 
-        if ( BMI < 18.5) {
-            System.out.println(" => MALNOURISHED");
-        } else if ( BMI >= 18.5 && BMI <= 24.9) {
-            System.out.println(" => NORMAL");
-        } else if ( BMI >= 25.0 && BMI <= 29.9) {
-            System.out.println(" => OVERWEIGHT");
-        } else if ( BMI >= 30.0 ) {
-            System.out.println(" => OBESE");
+            if ( BMI < 18.5) {
+                System.out.println(" => MALNOURISHED");
+            } else if ( BMI >= 18.5 && BMI <= 24.9) {
+                System.out.println(" => NORMAL");
+            } else if ( BMI >= 25.0 && BMI <= 29.9) {
+                System.out.println(" => OVERWEIGHT");
+            } else if ( BMI >= 30.0 ) {
+                System.out.println(" => OBESE");
+            }
         }
-
     }
 }
